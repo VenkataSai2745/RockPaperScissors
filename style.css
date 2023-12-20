@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.header {
+    width: 100vw;
+    height:12vmin;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+
+}
+
+#rock {
+    background: url(/images/rock.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#paper {
+    background: url(/images/paper.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#scissor {
+    background: url(/images/scissors.png);
+    background-position: center;
+    background-size: cover;
+}
+.option:hover{
+    border: 1vmin solid black;
+}
+.container{
+    margin-top: 5vmin;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.score-card{
+    margin-top: 5rem;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 8rem;
+    font-size: 1.5rem;
+}
+.text{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.btn{
+    text-align: center;
+}
+button{
+
+    margin-top: 3rem;
+    /* text-align: center; */
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border-radius: 10%;
+    background-color: brown;
+    color: aliceblue;
+}
+
+@media  (max-width:450px){
+    .option {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;    
+    }
+    .score-card{
+        margin-top: 2rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 4rem;
+        font-size: 1.5rem;
+    }
+    button{
+        margin-top: 1rem;
+        text-align: center;
+        padding:0.5rem 1rem;
+        font-size: 1rem;
+    }
+    .text{
+        font-size: 1rem;
+    }
+}
